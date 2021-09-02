@@ -116,6 +116,11 @@
     width: 480px;
     height: 240px;
   }
+  .work1 img:hover, .work2 img:hover{
+      width: 512px;
+      height: 384px;
+  }
+  
   
   .visitweb, .visitcode{
     position: relative;
@@ -133,3 +138,17 @@
   .visitweb:hover, .visitcode:hover{
       background-color: var(--background-color-one);
   }
+  .contact-me-section h2{
+      color: var(--heading-color-two);
+  }
+
+  .contact-me-section p{
+      display: inline;
+      color: var(--paragraph-color-two);
+  }
+  .symbol{
+    height: 50px;
+    mix-blend-mode: multiply;
+    opacity: 0.8;  
+  }
+ 
