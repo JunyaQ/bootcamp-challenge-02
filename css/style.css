@@ -70,27 +70,31 @@
     text-align: center;
     background-color: #ffffff;
     border: 1px dotted black;
-    opacity: 0.6;
+    opacity: 1;
     padding: 20px 0;
     font-size: 30px;
   }
   .picwall div:hover{
-    opacity: 1;
+    opacity: 0.6;
   }
   
-
+.float-container{
+    display: flex;
+}
 .about-me-section{
-float:left;
-margin-right: 55%;
-width: 45%;
+flex: 1;
+max-width: 50%;
 height: 100%;
 overflow: hidden;
 }
+.about-me-section h2, h3, h4{
+    color: var(--heading-color-two);
+}
+.about-me-section p{
+    color: var(--paragraph-color-two);
+}
 
 .work-section{
-float:right;
-margin-left: 55%;
-width: 45%;
 height: 100%;
 overflow: hidden;
 display: inline;
