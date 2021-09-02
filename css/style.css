@@ -80,14 +80,15 @@
   
 .float-container{
     display: flex;
+    flex-direction: row;
 }
 .about-me-section{
-flex: 1;
-max-width: 50%;
-height: 100%;
-overflow: hidden;
+    flex: 1;
+    max-width: 50%;
+    height: 100%;
+    overflow: hidden;
 }
-.about-me-section h2, h3, h4{
+.about-me-section h2, .about-me-section h3, .about-me-section h4{
     color: var(--heading-color-two);
 }
 .about-me-section p{
@@ -95,7 +96,40 @@ overflow: hidden;
 }
 
 .work-section{
-height: 100%;
-overflow: hidden;
-display: inline;
+    color: var(--heading-color-one);
+    flex: 1;
 }
+.work-section h2{
+    color: var(--heading-color-one);
+}
+.work-section p{
+    color: var(--paragraph-color-one);
+}
+.work1 {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .work1 img {
+    width: auto;
+    height: 240px;
+  }
+  
+  .work1 .visitweb {
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: var(--heading-color-two);
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .work1.visitweb:hover{
+      background-color: var(--background-color-one);
+  }
