@@ -1,22 +1,26 @@
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 :root{
-    --purple-background:#D1C2DF;
-    --green-background:#C4E2C7;
-    --purple-text:#7A7281;
-    --green-text:#7B8B6F;
+    --background-color-one:#D1C2DF;
+    --background-color-two:#C4E2C7;
+    --paragraph-color-one:#7A7281;
+    --paragraph-color-two:#7B8B6F;
+    --heading-color-one:#6b5a79;
+    --heading-color-two:#5e7a48;
 }
 
 .mainpage{
-    background-image:linear-gradient(to right,var(--purple-background) 50%, var(--green-background) 50% );
+    background-image:linear-gradient(to right, var(--background-color-one) 50%, var(--background-color-two)50% );
 }
+
+
 .header {
-   
     padding-bottom: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:var(--green-text);
+    color:var(--heading-color-two);
     font-size: 50px;
 }
 .header h1{
@@ -35,7 +39,7 @@
     font-size: 20px;
 }
 .navigate-section a{
-    color: var(--purple-text);
+    color: var(--heading-color-one);
     text-decoration: underline;
     margin: 10px;
     padding-top: 10%;
@@ -48,4 +52,46 @@
     display: inline-block;
     margin-left: 25px;
 }
+.about-me-section, .work-section, .contact-me-section{
+    padding: 20px;
+    display: inline-block;
+}
+.background-subtitle-section h2{
+    color:var(--heading-color-two);
+    padding-left: 40px;
+}
+.picwall {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-auto-flow: row;
+    gap: 5px 50px;
+  }
+  .picwall div {
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px dotted black;
+    opacity: 0.6;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .picwall div:hover{
+    opacity: 1;
+  }
+  
 
+.about-me-section{
+float:left;
+margin-right: 55%;
+width: 45%;
+height: 100%;
+overflow: hidden;
+}
+
+.work-section{
+float:right;
+margin-left: 55%;
+width: 45%;
+height: 100%;
+overflow: hidden;
+display: inline;
+}
