@@ -105,31 +105,31 @@
 .work-section p{
     color: var(--paragraph-color-one);
 }
-.work1 {
-    position: relative;
+.work1, work2 {
+    margin-bottom: 30px ;
+    margin-right: 50px;
     width: 100%;
     max-width: 400px;
   }
   
-  .work1 img {
-    width: auto;
+  .work1 img, .work2 img{
+    width: 480px;
     height: 240px;
   }
   
-  .work1 .visitweb {
-    position: absolute;
-    right: -10px;
-    bottom: -3px;
-    transform: translate(-50%, -50%);
+  .visitweb, .visitcode{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
     background-color: #f1f1f1;
     color: var(--heading-color-two);
     font-size: 16px;
     padding: 5px 10px;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    display: inline-block;
   }
-  .work1.visitweb:hover{
+  .visitweb:hover, .visitcode:hover{
       background-color: var(--background-color-one);
   }
