@@ -88,14 +88,14 @@
     display: none;
     position: absolute;
     background-color:var(--background-color-one);
-    min-width: 160px;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
     color: var(--heading-color-one);
-    padding: 12px 16px;
+    padding: 10px 15px;
     text-decoration: none;
     display: block;
   }
@@ -121,7 +121,7 @@
     grid-auto-flow: 1fr 1fr;
     gap: 5px 50px;
   }
-  
+  /* for screen when change smaller size*/
   @media screen and (max-width: 600px) {
     .picwall{
         display: flex;
@@ -131,7 +131,7 @@
     } 
 
   }
-  
+  /*set background and padding for the pictures */
   .picwall div {
     background-color: white; 
     text-align: center;
@@ -140,6 +140,7 @@
     padding: 20px 0;
     font-size: 30px;
   }
+  /*set picture size*/
   .picwall img{
       max-height: 240px;
       width: auto;
@@ -167,47 +168,52 @@
     display: flex;
     flex-direction: row;
 }
+/*set position for the about me section*/
 .about-me-section{
     flex: 1;
     max-width: 50%;
     height: 100%;
     overflow: hidden;
 }
+/*set colors*/
 .about-me-section h2, .about-me-section h3, .about-me-section h4{
     color: var(--heading-color-two);
 }
 .about-me-section p{
     color: var(--paragraph-color-two);
 }
-
+/*set colors and position for work section*/
 .work-section{
     color: var(--heading-color-one);
     flex: 2;
     padding-left: 25%;
 }
+/*set colors */
 .work-section h2{
     color: var(--heading-color-one);
 }
 .work-section p{
     color: var(--paragraph-color-one);
 }
+/*set positions for works in work section*/
 .work1, work2 {
     margin-bottom: 30px ;
     margin-right: 50px;
     width: 100%;
     max-width: 400px;
   }
-  
+  /*set img size*/
   .work1 img, .work2 img{
     width: 360px;
     height: auto;
   }
+  /*when hover the size of the picture changes and based on html when click on it will go to the deployed*/
   .work1 img:hover, .work2 img:hover{
       width: 512px;
       height: auto;
   }
   
-  
+  /*for the buttons, set the color, text position, and size for the button*/
   .visitweb, .visitcode{
     position: relative;
     margin-top: 10px;
@@ -224,13 +230,15 @@
   .visitweb:hover, .visitcode:hover{
       background-color: var(--background-color-one);
   }
-
+/*set position for the contact me section*/
   .contact-me-section{
       display: flex;
       display: inline;
+      flex: 1;
       
   }
-
+/*set colors and symbol size for contact me section, based on html, when click onto the symbol 
+it will go to the relative webpage or make webcall*/
   .contact-me-section h2{
       color: var(--heading-color-two);
   }
@@ -246,6 +254,7 @@
     mix-blend-mode: multiply;
     opacity: 0.8;  
   }
+  /*set footer to the center of the page*/
  footer{
      text-align: center;
  }
