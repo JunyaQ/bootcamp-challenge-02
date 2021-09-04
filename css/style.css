@@ -3,16 +3,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+   
 }
 /*clean the white extra column issue when resize the webpage */
-html,bodye
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
+
 :root{
     --background-color-one:#D1C2DF;
     --background-color-two:#C4E2C7;
@@ -22,7 +16,7 @@ html,bodye
     --heading-color-two:#5e7a48;
 }
 /*set background for the entire page*/
-.mainpage{
+.mainpage, footer{
     background-image:linear-gradient(to right, var(--background-color-one) 50%, var(--background-color-two)50% );
     background-size: cover;
     min-height: 100%;
@@ -120,7 +114,7 @@ html,bodye
     color:var(--heading-color-two);
     padding-left: 40px;
 }
-/*for pictures five pictures in a row*/
+/*for pictures five pictures in a row normal screen size*/
 .picwall {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -128,16 +122,26 @@ html,bodye
     gap: 5px 50px;
   }
   
+  @media screen and (max-width: 600px) {
+    .picwall{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    } 
+
+  }
+  
   .picwall div {
+    background-color: white; 
     text-align: center;
-    background-color: whitesmoke;
     border: 1px dotted black;
     opacity: 1;
     padding: 20px 0;
     font-size: 30px;
   }
   .picwall img{
-      max-height: 260px;
+      max-height: 240px;
       width: auto;
   }
   /*put messages for each pictures when hover on it*/
@@ -178,7 +182,8 @@ html,bodye
 
 .work-section{
     color: var(--heading-color-one);
-    flex: 1;
+    flex: 2;
+    padding-left: 25%;
 }
 .work-section h2{
     color: var(--heading-color-one);
@@ -194,12 +199,12 @@ html,bodye
   }
   
   .work1 img, .work2 img{
-    width: 480px;
-    height: 240px;
+    width: 360px;
+    height: auto;
   }
   .work1 img:hover, .work2 img:hover{
       width: 512px;
-      height: 384px;
+      height: auto;
   }
   
   
@@ -219,6 +224,13 @@ html,bodye
   .visitweb:hover, .visitcode:hover{
       background-color: var(--background-color-one);
   }
+
+  .contact-me-section{
+      display: flex;
+      display: inline;
+      
+  }
+
   .contact-me-section h2{
       color: var(--heading-color-two);
   }
@@ -234,4 +246,6 @@ html,bodye
     mix-blend-mode: multiply;
     opacity: 0.8;  
   }
- 
+ footer{
+     text-align: center;
+ }
