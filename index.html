@@ -18,7 +18,16 @@
     <section class="navigate-section">
         <ul>
             <li><a href="#about me">About Me</a></li>
-            <li><a href="#work">Work</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Work</button>
+                    <div class="dropdown-content">
+                      <a href="#work" class="work">All</a>
+                      <a href="#work1">work 1</a>
+                      <a href="#work2">work 2</a>
+                    </div>
+                  </div>
+            </li>
             <li><a href="#contact-me">Contact Me</a></li>
             <li><a href="#resume">Resume</a></li>
         </ul>
@@ -81,13 +90,13 @@
     
     <section class="work-section">
     <h2 id="work">Work</h2>
-    <div class="work1"><h3>Run Buddy</h3>
+    <div class="work1" id="work1"><h3>Run Buddy</h3>
         <a href="https://junyaq.github.io/bootcamp_class_week2/" target="_blank"><img src="./image/work1.jpg" alt="run buddy page pic"></a><br/>
         <a href="https://junyaq.github.io/bootcamp_class_week2/" target="_blank"><button class="visitweb">See the website</button></a>
         <a href="https://github.com/JunyaQ/bootcamp_class_week2"target="_blank"><button class="visitcode">See the code on GitHub</button></a>
     </div>
 
-    <div class="work2"><h3>Robot Gladiators</h3>
+    <div class="work2" id="work2"><h3>Robot Gladiators</h3>
         <a href="https://junyaq.github.io/robot-gladiators/" target="_blank"><img src="./image/work2.png" alt="Robot Gladiators page pic"></a><br/>
         <a href="https://junyaq.github.io/robot-gladiators/" target="_blank"><button class="visitweb">See the website</button></a>
         <a href="https://github.com/JunyaQ/robot-gladiators" target="_blank"><button class="visitcode">See the code on GitHub</button></a>
