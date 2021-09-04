@@ -13,3 +13,7 @@ THEN taken to the deployed webpage <br/>
 WHEN click on two buttons under the webpage picture for each work <br/>
 THEN it bring to the github code / deployed webpage <br/>
 
+
+
+
+Delopyed URL for this website: https://junyaq.github.io/bootcamp-challenge-02/ <br/>
