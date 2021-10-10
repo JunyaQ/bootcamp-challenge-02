@@ -206,19 +206,19 @@
     color: var(--paragraph-color-one);
 }
 /*set positions for works in work section*/
-.work1, work2 {
+.work1, .work2,.work3 {
     margin-bottom: 30px ;
     margin-right: 50px;
     width: 100%;
     max-width: 400px;
   }
   /*set img size*/
-  .work1 img, .work2 img{
+  .work1 img, .work2 img, .work3 img{
     width: 360px;
     height: auto;
   }
   /*when hover the size of the picture changes and based on html when click on it will go to the deployed*/
-  .work1 img:hover, .work2 img:hover{
+  .work1 img:hover, .work2 img:hover, .work3 img:hover{
       width: 512px;
       height: auto;
   }
